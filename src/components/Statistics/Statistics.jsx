@@ -5,7 +5,7 @@ class Statistics extends Component{
     
     render(){
 
-        const {good, neutral, bad} = this.props;
+        const {good, neutral, bad, total, positivePercentage} = this.props;
         return (
         <ul>
             <li>
@@ -22,11 +22,11 @@ class Statistics extends Component{
             </li>
             <li>
                 <p>Total:</p>
-                <span></span>
+                <span>{total}</span>
             </li>
             <li>
                 <p>Positive feedback:</p>
-                <span></span>
+                <span>{positivePercentage}%</span>
             </li>
         </ul>
         )
