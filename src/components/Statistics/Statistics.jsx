@@ -26,7 +26,7 @@ class Statistics extends Component{
             </li>
             <li>
                 <p>Positive feedback:</p>
-                <span>{positivePercentage}%</span>
+                <span>{Math.round(positivePercentage)}%</span>
             </li>
         </ul>
         )
